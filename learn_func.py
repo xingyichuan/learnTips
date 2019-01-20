@@ -33,3 +33,41 @@ def power(x, n):
     return s
 
 print(power(5, 2))
+
+
+def enroll(name, gender, age=6, city='Beijing'):
+    print('name:', name)
+    print('gender:', gender)
+    print('age:', age)
+    print('city:', city)
+
+
+enroll('Bob', 'M', 7)
+enroll('Adam', 'M', city='Tianjin')
+
+
+def add_end(L=[]):
+    L.append('END')
+    return L
+
+add_end()
+
+print(add_end())
+
+def calc(numbers):
+    sum = 0
+    for n in numbers:
+        sum = sum + n * n
+    return sum
+
+calc([1, 2, 3])
+calc((1, 3, 5, 7))
+
+def calc1(*numbers):
+    sum = 0
+    for n in numbers:
+        sum = sum + n * n
+    return sum
+
+nums = [1, 2, 3]
+print(calc1(*nums))
