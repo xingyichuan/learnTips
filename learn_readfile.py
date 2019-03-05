@@ -27,6 +27,10 @@ f.close()
 # f = open('/Users/michael/gbk.txt', 'r', encoding='gbk')
 # f = open('/Users/michael/gbk.txt', 'r', encoding='gbk', errors='ignore')
 
-f1 = open(r'H:\project\project\learnTips\notfound.txt', 'w')
-f1.write('Hello, world!')
-f1.close()
+# f1 = open(r'H:\project\project\learnTips\notfound.txt', 'w')
+# f1.write('Hello, world!')
+# f1.close()
+
+
+with open(r'H:\project\project\learnTips\notfound.txt', 'a') as f:
+    f.write('\r\nHello, world3!\r\n')
